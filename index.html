@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Sederhana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="logolearnjapan.png" alt="logo" class="logo">
+        <img src="tiktoklearnjapan.png" alt="logo" class="logott">
+        <img src="pamflet.png" alt="logo" class="pam">
+        <!-- <h1>Kuis Sederhana</h1> -->
+        <div id="level-container" class="contener">
+            <h2>Pilih kelompok kanjimu!</h2>
+            <button class="btn" onclick="startLevel(1)">Kanji 1</button>
+            <button class="btn" onclick="startLevel(2)">Kanji 2</button>
+            <button class="btn" onclick="startLevel(3)">Kanji 3</button>
+            <button class="btn" onclick="startLevel(4)">Kanji 4</button>
+            <button class="btn" onclick="startLevel(5)">Kanji 5</button>
+            <button class="btn" onclick="startLevel(6)">Kanji 6</button>
+            <button class="btn" onclick="startLevel(7)">Kanji 7</button>
+            <button class="btn" onclick="startLevel(8)">Kanji 8</button>
+            <button class="btn" onclick="startLevel(9)">Kanji 9</button>
+            <button class="btn" onclick="startLevel(10)">Kanji 10</button>
+            <button class="btn" onclick="startLevel(11)">Kanji 11</button>
+            <button class="btn" onclick="startLevel(12)">Kanji 12</button>
+        </div>
+        <div id="quiz-container" class="hidden">
+            <p id="level-info" class="level-info"></p> <!-- Tambahkan ini untuk menampilkan informasi babak -->
+            <div id="question-container" class="teks"></div>
+            <div id="answer-buttons" class="btn-container"></div>
+            
+        </div>
+        
+        <div id="score-container" class="hidden">
+            <h2>Skor Akhir</h2>
+            <p id="score"></p>
+            <p id="incorrect"></p>
+            <p id="max-score"></p>
+            <button class="btnbabak" onclick="backToLevels()">Pilih Babak Lain</button>
+        </div>
+        <button id="next-btn" class="btnhidden">Next</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
